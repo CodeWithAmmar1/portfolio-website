@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize scroll animations
     initScrollAnimations();
-    
+     
     // Initialize mobile menu
     initMobileMenu();
     
