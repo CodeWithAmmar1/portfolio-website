@@ -35,7 +35,7 @@ function initNeonBackground() {
     // Set canvas dimensions
     const setCanvasDimensions = () => {
         canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        canvas.height = window.innerHeight/6;
     };
     
     setCanvasDimensions();
