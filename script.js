@@ -96,10 +96,8 @@ function initNeonBackground() {
 function initTypingEffect() {
     const element = document.getElementById('typed-text');
     if (!element) return;
-
     const fullText = 'Muhammad Ali Ammar Naseer';
     let index = 0;
-
     function typeNextCharacter() {
         if (index < fullText.length) {
             element.textContent += fullText.charAt(index);
@@ -114,7 +112,6 @@ function initTypingEffect() {
 // Scroll Animations
 function initScrollAnimations() {
     const animateItems = document.querySelectorAll('.animate-item, .animate-left, .animate-scale');
-
     const checkScroll = () => {
         animateItems.forEach(item => {
             const itemTop = item.getBoundingClientRect().top;
@@ -138,14 +135,11 @@ function initMobileMenu() {
     const menuBtn = document.querySelector('.menu-btn');
     const mobileNav = document.querySelector('.mobile-nav');
     const mobileNavLinks = document.querySelectorAll('.mobile-nav .nav-link');
-
     if (!menuBtn || !mobileNav) return;
-
     let isMenuOpen = false;
 
     menuBtn.addEventListener('click', () => {
         isMenuOpen = !isMenuOpen;
-
         if (isMenuOpen) {
             menuBtn.innerHTML = '<i class="fas fa-times"></i>';
             mobileNav.classList.add('active');
