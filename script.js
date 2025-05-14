@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
 function initNeonBackground() {
     const canvas = document.getElementById('neonBackground');
     if (!canvas) return;
-
     const ctx = canvas.getContext('2d');
 
     // Set canvas dimensions
