@@ -169,9 +169,7 @@ function initMobileMenu() {
 function initProjectFilter() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
-
     if (filterBtns.length === 0 || projectCards.length === 0) return;
-
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             // Remove active class from all buttons
@@ -197,9 +195,7 @@ function initProjectFilter() {
 // Contact Form
 function initContactForm() {
     const form = document.getElementById('contactForm');
-
     if (!form) return;
-
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
@@ -225,9 +221,7 @@ function initContactForm() {
 // Header Scroll Effect
 function initHeaderScroll() {
     const header = document.querySelector('.sticky-header');
-
     if (!header) return;
-
     window.addEventListener('scroll', () => {
         if (window.scrollY > 20) {
             header.classList.add('scrolled');
