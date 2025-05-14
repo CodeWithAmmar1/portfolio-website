@@ -43,7 +43,6 @@ function initNeonBackground() {
     // Create grid points
     const gridSize = 30;
     const points = [];
-
     const colors = ['#0ff', '#f0f', '#0f0', '#ff0'];
 
     for (let x = 0; x < canvas.width; x += gridSize) {
